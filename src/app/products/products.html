@@ -1,0 +1,22 @@
+<div class="p-3">
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Price</th><th>Selected</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (p of PRODUCTS;track p){
+          <tr>
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.selected}}</td>
+
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
